@@ -1,0 +1,620 @@
+/* Responsive */
+@media (min-width: 1800px) {
+	.banner-content-outer h1 {
+		font-size: 102px;
+		max-width: 900px;
+	}
+}
+@media (max-width: 1199px) {
+	.banner-content-outer h1 {
+		font-size: 70px;
+	}
+	.hddr_inr {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.logo {
+		width: 180px;
+		display: block;
+	}
+
+	.sticky .logo {
+		width: 160px;
+	}
+
+	.nav_holder {
+		padding: 10px 0;
+	}
+
+	.hdr_menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		max-width: 400px;
+		transform: translateX(100%);
+		background: #fff;
+		overflow-y: auto;
+		transition: transform 0.5s cubic-bezier(0.07, 0.23, 0.34, 1);
+		padding: 10px 15px 20px;
+		z-index: 99;
+	}
+
+	.hdr_menu ul {
+		padding-top: 50px;
+	}
+
+	.hdr_menu ul li {
+		width: 100%;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.hdr_menu ul li.menu-item-has-children .sub-menu {
+		display: block;
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		width: 100%;
+		padding: 0px 10px 0;
+		background-color: transparent;
+		box-shadow: none;
+		transform: none;
+		transition: initial !important;
+		-webkit-transition: initial !important;
+	}
+
+	.hdr_menu ul li.menu-item-has-children ul li {
+		padding: 5px 0;
+		line-height: 1.5;
+	}
+
+	.hdr_menu li {
+		margin-right: 0;
+		padding-right: 0;
+		border: 0;
+		margin-bottom: 0px;
+	}
+
+	.hdr_menu li a {
+		font-size: 15px;
+		font-weight: 400;
+		display: block;
+		color: #000000;
+		padding: 5px 0;
+	}
+
+	.hdr_menu li a:hover {
+		color: #688238 !important;
+	}
+
+	.hdr_menu li a::before {
+		display: none;
+	}
+
+	.hdr_menu li:hover a {
+		color: #000000 !important;
+	}
+
+	.hdr_menu li.menu-item-has-children .sub-menu a {
+		color: #000;
+		font-size: 15px;
+	}
+
+	.hdr_menu li.menu-item-has-children .sub-menu a:hover {
+		color: #688238;
+		padding-left: 0;
+	}
+
+	.hdr_menu li.menu-item-has-children.current-menu-item > a {
+		color: #688238;
+	}
+
+	.hdr_menu li.menu-item-has-children.current-menu-item > a:hover {
+		color: #688238;
+	}
+
+	.hdr_menu li > a::after {
+		display: none;
+	}
+
+	.sticky .hdr_menu li.current-menu-item a {
+		color: #688238;
+	}
+
+	.sticky .hdr_menu li:hover a {
+		color: #688238;
+	}
+
+	.sticky .hdr_menu li a {
+		color: #000000;
+		background-color: transparent;
+	}
+
+	.menu_btn {
+		width: 30px;
+		display: block;
+	}
+
+	.menu_btn span {
+		height: 2px;
+		display: block;
+		background: #ef6130;
+		margin-left: auto;
+		transition: 0.4s;
+	}
+
+	.menu_btn span:nth-child(2) {
+		width: 80%;
+	}
+
+	.menu_btn span + span {
+		margin-top: 5px;
+	}
+
+	.menu_trigger {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		z-index: 100;
+		transform: translateY(-50%);
+	}
+
+	.mobile_menu_active {
+		overflow: hidden;
+	}
+
+	.mobile_menu_active .menu_trigger {
+		right: 20px;
+		top: 25px;
+		transform: none;
+		position: fixed;
+	}
+
+	.mobile_menu_active .hdr_menu {
+		transform: translateX(0px);
+	}
+
+	.mobile_menu_active .overlay {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 30;
+	}
+
+	.mobile_menu_active .menu_btn span {
+		background: #688238;
+	}
+
+	.mobile_menu_active .menu_btn span:first-child {
+		transform: rotate(45deg);
+	}
+
+	.mobile_menu_active .menu_btn span:last-child {
+		transform: rotate(-45deg);
+	}
+
+	.mobile_menu_active .menu_btn span:nth-child(2) {
+		display: none;
+	}
+
+	.mobile_menu_active .menu_btn span + span {
+		margin-top: -2px;
+		width: 100%;
+	}
+
+	.mobile_menu_active .hddr_inr {
+		position: static;
+	}
+
+	.mobile_menu_active .sticky .nav_holder {
+		position: fixed;
+	}
+
+	.mobile_menu_active .nav_inr {
+		position: static;
+	}
+
+	.overlay {
+		overflow: hidden;
+	}
+
+	.nav_inr {
+		position: relative;
+	}
+
+	.sub_menu_opener {
+		display: block;
+		pointer-events: none;
+	}
+
+	.responisve-logo {
+		display: block;
+		width: 270px;
+	}
+
+	.header-social-list-outer {
+		display: none;
+	}
+
+	.header-social-list-outer.responsive-header-social-btn {
+		margin-bottom: 15px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.responsive-menu-additional-components {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hdr_menu li.menu-item-has-children .sub-menu li.current-menu-item a {
+		padding-left: 0;
+	}
+	.our-work-process-wrapper .tab-content > .tab-pane {
+		display: block;
+		opacity: 1;
+	}
+	.side-pic {
+		display: none;
+	}
+	.menu-holder {
+		width: 100%;
+		max-width: 100%;
+	}
+	.building-with-care-media img {
+		width: 100%;
+	}
+	.building-with-care-wrapper .section-heading {
+		padding-left: 0;
+		margin-top: 30px;
+	}
+	.schedule-free-consultation-wrapper .schedule-free-consultation-pic {
+		position: static;
+		padding: 0 12px;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.schedule-free-consultation-data {
+		max-width: 100%;
+	}
+	.featured-project-card img {
+		width: 100%;
+	}
+	.our-work-process-wrapper .tabCumAccordian .tabNav ul li {
+		padding-left: 75px;
+	}
+	.our-work-process-wrapper .tabCumAccordian .tabNav ul li::before {
+		width: 55px;
+		height: 55px;
+		font-size: 25px;
+	}
+	.our-work-process-wrapper .tabCumAccordian .tabNav ul {
+		padding-right: 10px;
+	}
+	.our-work-process-wrapper .tabCumAccordian .tabNav ul li::after {
+		left: 28px;
+	}
+	.our-passion-wrapper .what-ww-do-pic {
+		position: static;
+		width: 100%;
+		padding: 0 15px;
+	}
+	.our-passion-wrapper {
+		padding-top: 60px;
+	}
+	.our-passion-wrapper .section-heading {
+		max-width: 100%;
+		margin-left: auto;
+		padding: 0;
+		margin-top: 30px;
+	}
+	.backyard-undertake-pic {
+		margin-bottom: 30px;
+	}
+	.backyard-undertake-pic img {
+		width: 100%;
+	}
+	.backyard-undertake-list-outer .item {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.input-field {
+		margin-bottom: 15px;
+	}
+
+	.banner-wrapper .banner-text {
+		position: relative;
+		z-index: 2;
+	}
+
+	.banner-wrapper .banner-text h1 {
+		font-size: 32px;
+	}
+
+	.section-heading h2 {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+	.ourSolution .tabCumAccordian .tabNav {
+		display: none;
+	}
+
+	.banner-content-outer p {
+		font-size: 20px;
+	}
+	.menu-holder .nav li a {
+		padding: 12px 12px 12px 30px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	.off-canvas-menu-holder .off-canvas-close-btn {
+		top: 25px;
+		right: 20px;
+	}
+	.banner-content-outer .btn {
+		min-width: auto;
+	}
+	.btn,
+	.basic-btn {
+		font-size: 17px;
+		line-height: 1.4;
+		padding: 11px 24px;
+	}
+	.service-slider-outer .service-slide-card .data {
+		padding: 15px;
+		margin: 0;
+		transform: none;
+	}
+	.service-slider-outer .service-slide-card .data h3 {
+		font-size: 22px;
+	}
+	.work-with-us-wrapper .work-with-us-video-holder {
+		height: 350px;
+	}
+	.our-design-row {
+		padding: 40px 0;
+	}
+	.our-design-card {
+		padding: 0;
+		border-right: 0;
+	}
+	.team-grid [class*="col-"]:nth-child(2) {
+		width: 100%;
+	}
+	.schedule-free-consultation-wrapper {
+		padding: 50px 0;
+	}
+	.section-padding {
+		padding: 50px 0;
+	}
+	.our-portfolio-wrapper .section-heading {
+		margin: 40px auto;
+	}
+
+	.testimonial-slider-outer .testimonial-card .review-data-outer {
+		flex-direction: column;
+	}
+	.testimonial-slider-outer .testimonial-card .author-info {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.review-meta-data-outer {
+		margin: 0 auto 20px;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.review-meta-data-outer .data-left {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.review-meta-data-outer .data-right {
+		width: 100%;
+	}
+	.review-others-list-outer {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.review-others-list-outer .item {
+		padding: 0 10px;
+	}
+	.review-others-list-outer .item:first-child {
+		padding-left: 0;
+	}
+
+	.testimonial-slider-outer .swiper-nav {
+		margin-top: 0;
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		flex-direction: row-reverse;
+	}
+	.testimonial-slider-outer .swiper-button-prev,
+	.testimonial-slider-outer .swiper-button-next {
+		position: static;
+		transform: none;
+		margin: 0;
+	}
+	.footer-top-row {
+		padding-top: 40px;
+	}
+	.footer-top-row > [class*="col-"]:nth-child(2) {
+		padding-left: 15px;
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	.footer-top-row > [class*="col-"] {
+		padding: 0 15px 30px;
+	}
+	.footer-bottom-row .holder {
+		flex-direction: column;
+		gap: 15px;
+	}
+	.schedule-contact-form-wrapper .video-holder {
+		height: 900px;
+	}
+	.portfolio-list-outer .item .data h3 {
+		font-size: 25px;
+	}
+	.all-review-network-outer {
+		margin-top: 50px;
+	}
+	.our-designs-wrapper
+		.our-designs-content-outer
+		.accordion-item
+		.accordion-header
+		.accordion-button {
+		padding: 12px 0 12px 40px;
+		font-size: 21px;
+	}
+	.tabInner .title-outer {
+		display: block;
+		margin-bottom: 15px;
+	}
+	.tabInner .title-outer h3 {
+		font-family: var(--playfair);
+		font-size: 23px;
+		font-weight: 400;
+		line-height: 1.4;
+		margin-bottom: 5px;
+		color: #343332;
+	}
+	.tabPan {
+		margin-bottom: 30px;
+		position: relative;
+		padding-left: 55px;
+		cursor: pointer;
+		counter-increment: step-counter;
+	}
+	.tabPan:not(:first-child)::after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 21px;
+		height: 100%;
+		border-left: 1px solid #e8e8e8;
+	}
+	.tabInner::before {
+		content: counter(step-counter);
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		background-color: #e6e6e6;
+		font-size: 20px;
+		line-height: 1;
+		z-index: 1;
+		transition: all 0.4s ease-in-out;
+	}
+	.tabNav {
+		display: none;
+	}
+	.our-work-process-wrapper .tabCumAccordian > div {
+		width: 100%;
+		padding: 0;
+	}
+	.tabInner {
+		display: block !important;
+	}
+	.project-details-gallery-wrapper
+		[class*="col-"]:nth-last-child(2)
+		.gallery-item,
+	.project-details-gallery-wrapper [class*="col-"]:last-child .gallery-item,
+	.project-details-gallery-wrapper .gallery-item {
+		height: 350px;
+		min-height: 350px;
+	}
+	.featured-video-list-outer .video-media {
+		height: 350px;
+		min-height: 350px;
+	}
+	.our-passion-wrapper .section-heading h3 {
+		font-size: 26px;
+	}
+	.backyard-undertake-list-outer .item {
+		margin-bottom: 25px;
+	}
+	.backyard-undertake-list-outer .item h3 {
+		font-size: 24px;
+	}
+	.our-work-process-wrapper .tabCumAccordian {
+		margin: 0;
+	}
+	.about-banner-wrapper {
+		padding: 150px 0 80px;
+	}
+	.way-to-go-work-wrapper .way-to-go-work-list-outer {
+		padding-bottom: 50px;
+	}
+	.way-to-go-work-wrapper .way-to-go-work-list-outer .item h3 {
+		font-size: 22px;
+		margin-top: 15px;
+		padding-left: 24px;
+	}
+	.way-to-go-work-wrapper .way-to-go-work-list-outer .item {
+		width: 100%;
+		padding: 15px;
+		padding-left: 0;
+		border-right: 0;
+	}
+	.way-to-go-work-wrapper .way-to-go-work-list-outer .item::before {
+		top: 35px;
+		left: 0;
+		right: auto;
+	}
+	.way-to-go-work-wrapper
+		.way-to-go-work-list-outer
+		.item:nth-child(1)::before,
+	.way-to-go-work-wrapper
+		.way-to-go-work-list-outer
+		.item:nth-child(2)::before {
+		top: 20px;
+	}
+	.our-experience-wrapper .schedule-free-consultation-data h2 {
+		font-size: 28px;
+	}
+	.our-experience-wrapper .schedule-free-consultation-data h3 {
+		font-size: 25px;
+	}
+	.work-with-us-wrapper-two .video-holder {
+		height: 350px;
+		min-height: 350px;
+	}
+	.about-cta-wrapper .section-heading h2 {
+		margin-bottom: 30px;
+	}
+	.contact-banner-wrapper .banner-content-outer h2 {
+		font-size: 24px;
+	}
+	.contact-banner-wrapper .contact-form-outer {
+		margin: 40px auto 0;
+	}
+	.contact-banner-wrapper {
+		padding: 160px 0 70px;
+	}
+	.map-card iframe {
+		height: 400px;
+	}
+}
