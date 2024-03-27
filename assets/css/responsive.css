@@ -16,12 +16,12 @@
 
 @media (max-width: 991px) {
 	.logo {
-		width: 180px;
+		width: 250px;
 		display: block;
 	}
 
 	.sticky .logo {
-		width: 160px;
+		width: 240px;
 	}
 
 	.nav_holder {
@@ -327,6 +327,29 @@
 	}
 	.backyard-undertake-list-outer .item {
 		max-width: 100%;
+	}
+	.header-right-content .menu-toggle-btn {
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		position: static;
+	}
+	.sticky .header-right-content .menu-toggle-btn {
+		height: auto;
+		box-shadow: none;
+	}
+	.header-cta-btn {
+		display: none;
+	}
+	.header-right-content .menu-toggle-btn span {
+		border-top: 2px solid #fff;
+	}
+	.banner-social-outer::before,
+	.banner-social-outer::after {
+		display: none;
+	}
+	.banner-social-outer {
+		display: none;
 	}
 }
 
